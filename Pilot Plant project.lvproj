@@ -48,6 +48,8 @@
 		<Item Name="save data.vi" Type="VI" URL="../save data.vi"/>
 		<Item Name="save HRT data.vi" Type="VI" URL="../save HRT data.vi"/>
 		<Item Name="coag model linear regression.vi" Type="VI" URL="../coag model linear regression.vi"/>
+		<Item Name="coag pump volts.vi" Type="VI" URL="../coag pump volts.vi"/>
+		<Item Name="test write setpoints.vi" Type="VI" URL="../test write setpoints.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
