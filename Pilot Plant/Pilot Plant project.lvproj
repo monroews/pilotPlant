@@ -37,6 +37,7 @@
 		<Item Name="setpoints.vi" Type="VI" URL="../../setpoints.vi"/>
 		<Item Name="save data.vi" Type="VI" URL="../../save data.vi"/>
 		<Item Name="coagbuffer.ctl" Type="VI" URL="../../coagbuffer.ctl"/>
+		<Item Name="ramp.vi" Type="VI" URL="../../ramp.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -339,6 +340,9 @@
 			<Item Name="Manual or Auto.ctl" Type="VI" URL="../../Manual or Auto.ctl"/>
 			<Item Name="ini.ctl" Type="VI" URL="../../ini.ctl"/>
 			<Item Name="backwash.ctl" Type="VI" URL="../../backwash.ctl"/>
+			<Item Name="coag model linear regression.vi" Type="VI" URL="../../coag model linear regression.vi"/>
+			<Item Name="save HRT data.vi" Type="VI" URL="../../save HRT data.vi"/>
+			<Item Name="coag pump volts.vi" Type="VI" URL="../../coag pump volts.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
