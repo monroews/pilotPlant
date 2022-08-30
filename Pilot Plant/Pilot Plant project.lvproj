@@ -38,6 +38,7 @@
 		<Item Name="save data.vi" Type="VI" URL="../../save data.vi"/>
 		<Item Name="coagbuffer.ctl" Type="VI" URL="../../coagbuffer.ctl"/>
 		<Item Name="ramp.vi" Type="VI" URL="../../ramp.vi"/>
+		<Item Name="use to update setpoints datastructure.vi" Type="VI" URL="../../use to update setpoints datastructure.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
