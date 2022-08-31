@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="15008000">
+<Project Type="Project" LVVersion="19008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -11,7 +11,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="plantita.vi" Type="VI" URL="../../plantita.vi"/>
+		<Item Name="PilotPlant.vi" Type="VI" URL="../../PilotPlant.vi"/>
 		<Item Name="autoCoag.vi" Type="VI" URL="../../autoCoag.vi"/>
 		<Item Name="average data HRT.vi" Type="VI" URL="../../average data HRT.vi"/>
 		<Item Name="average data.vi" Type="VI" URL="../../average data.vi"/>
@@ -39,6 +39,9 @@
 		<Item Name="coagbuffer.ctl" Type="VI" URL="../../coagbuffer.ctl"/>
 		<Item Name="ramp.vi" Type="VI" URL="../../ramp.vi"/>
 		<Item Name="use to update setpoints datastructure.vi" Type="VI" URL="../../use to update setpoints datastructure.vi"/>
+		<Item Name="PilotPlant.ico" Type="Document" URL="../PilotPlant.ico"/>
+		<Item Name="test ramp.vi" Type="VI" URL="../../test ramp.vi"/>
+		<Item Name="raise to negative two thirds.vi" Type="VI" URL="../../raise to negative two thirds.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -327,6 +330,7 @@
 				<Item Name="subDataReductionHistory.vi" Type="VI" URL="/&lt;vilib&gt;/express/express signal manip/SampleCompressionConfig.llb/subDataReductionHistory.vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="subCollector.vi" Type="VI" URL="/&lt;vilib&gt;/express/express signal manip/SampleCompressionBlock.llb/subCollector.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 			</Item>
 			<Item Name="backwash.vi" Type="VI" URL="../../backwash.vi"/>
 			<Item Name="coag pump.vi" Type="VI" URL="../../coag pump.vi"/>
@@ -345,6 +349,132 @@
 			<Item Name="save HRT data.vi" Type="VI" URL="../../save HRT data.vi"/>
 			<Item Name="coag pump volts.vi" Type="VI" URL="../../coag pump volts.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Pilot Plant" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9FA8F037-59FA-4E5B-AEFD-3CF1090B5162}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{EAD8243D-D267-4993-828E-0177342E5A15}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{D7EA04A2-A74A-451F-9153-14DCF8600C4B}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Pilot Plant</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5DE775CD-868B-4290-890E-691361B57615}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">AguaClara Reach</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Pilot Plant</Property>
+				<Property Name="TgtF_internalName" Type="Str">Pilot Plant</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 AguaClara Reach</Property>
+				<Property Name="TgtF_productName" Type="Str">Pilot Plant</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{9ACA29C9-EF82-4D68-8D88-E7A593CA90DD}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">PilotPlant.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Pilot Plant Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Pilot Plant project</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{175DA080-55C0-420A-B44D-780B8D4E6AA8}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI-DAQmx Runtime 19.5</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{9B1B4A4C-0C7C-47BE-932F-17615B4A847D}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3 (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[1].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[1].productName" Type="Str">NI Deployment Framework 2019</Property>
+				<Property Name="DistPart[1].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[1].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[10].productName" Type="Str">NI TDM Streaming 19.0</Property>
+				<Property Name="DistPart[1].SoftDep[10].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[1].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[2].productName" Type="Str">NI Error Reporting 2019 (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[2].upgradeCode" Type="Str">{785BE224-E5B2-46A5-ADCB-55C949B5C9C7}</Property>
+				<Property Name="DistPart[1].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2019</Property>
+				<Property Name="DistPart[1].SoftDep[3].upgradeCode" Type="Str">{8386B074-C90C-43A8-99F2-203BAAB4111C}</Property>
+				<Property Name="DistPart[1].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[4].productName" Type="Str">NI Logos 19.0</Property>
+				<Property Name="DistPart[1].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[1].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[5].productName" Type="Str">NI LabVIEW Web Server 2019 (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[5].upgradeCode" Type="Str">{5F449D4C-83B9-492E-986B-6B85A29C431D}</Property>
+				<Property Name="DistPart[1].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[6].productName" Type="Str">NI mDNS Responder 19.0</Property>
+				<Property Name="DistPart[1].SoftDep[6].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[1].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[7].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[1].SoftDep[7].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[1].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2018</Property>
+				<Property Name="DistPart[1].SoftDep[8].upgradeCode" Type="Str">{33A780B9-8BDE-4A3A-9672-24778EFBEFC4}</Property>
+				<Property Name="DistPart[1].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[1].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[1].SoftDepCount" Type="Int">11</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{0F4FB023-A713-40CF-AC56-843EEEB44133}</Property>
+				<Property Name="DistPartCount" Type="Int">2</Property>
+				<Property Name="INST_author" Type="Str">Cornell University</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Pilot Plant project/Pilot Plant Installer</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Pilot Plant Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
+				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
+				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
+				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{74EF4270-35F4-46AD-AA76-061C14A1498B}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{D3A73DA6-E0D9-4C40-96D0-E40035837CB1}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">PilotPlant.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">PilotPlant</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Pilot Plant project</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{9ACA29C9-EF82-4D68-8D88-E7A593CA90DD}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">Pilot Plant</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Pilot Plant</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
