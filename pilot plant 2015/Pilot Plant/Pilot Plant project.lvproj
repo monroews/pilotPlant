@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="19008000">
+<Project Type="Project" LVVersion="15008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -389,7 +389,6 @@
 				<Property Name="TgtF_productName" Type="Str">Pilot Plant</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{9ACA29C9-EF82-4D68-8D88-E7A593CA90DD}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">PilotPlant.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Pilot Plant Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">Pilot Plant project</Property>
@@ -407,11 +406,11 @@
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
+				<Property Name="InstSpecVersion" Type="Str">15000000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
 				<Property Name="MSI_distID" Type="Str">{74EF4270-35F4-46AD-AA76-061C14A1498B}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_osCheck" Type="Int">4</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{D3A73DA6-E0D9-4C40-96D0-E40035837CB1}</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
