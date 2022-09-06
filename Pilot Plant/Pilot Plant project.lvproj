@@ -14,7 +14,7 @@
 		<Item Name="PilotPlant.vi" Type="VI" URL="../../PilotPlant.vi"/>
 		<Item Name="autoCoag.vi" Type="VI" URL="../../autoCoag.vi"/>
 		<Item Name="average data HRT.vi" Type="VI" URL="../../average data HRT.vi"/>
-		<Item Name="average data.vi" Type="VI" URL="../../average data.vi"/>
+		<Item Name="process data.vi" Type="VI" URL="../../process data.vi"/>
 		<Item Name="calcDoseorGetGraph.ctl" Type="VI" URL="../../calcDoseorGetGraph.ctl"/>
 		<Item Name="coag model selector.vi" Type="VI" URL="../../coag model selector.vi"/>
 		<Item Name="coagBuffer.vi" Type="VI" URL="../../coagBuffer.vi"/>
@@ -25,7 +25,7 @@
 		<Item Name="data cluster.ctl" Type="VI" URL="../../data cluster.ctl"/>
 		<Item Name="dataBuffer HRT.vi" Type="VI" URL="../../dataBuffer HRT.vi"/>
 		<Item Name="deltaHRT.vi" Type="VI" URL="../../deltaHRT.vi"/>
-		<Item Name="fittingParams.vi" Type="VI" URL="../../fittingParams.vi"/>
+		<Item Name="calcCoagDose.vi" Type="VI" URL="../../calcCoagDose.vi"/>
 		<Item Name="model type.ctl" Type="VI" URL="../../model type.ctl"/>
 		<Item Name="plantitaStates.ctl" Type="VI" URL="../../plantitaStates.ctl"/>
 		<Item Name="plantitaStates2.ctl" Type="VI" URL="../../plantitaStates2.ctl"/>
@@ -42,6 +42,9 @@
 		<Item Name="PilotPlant.ico" Type="Document" URL="../PilotPlant.ico"/>
 		<Item Name="test ramp.vi" Type="VI" URL="../../test ramp.vi"/>
 		<Item Name="raise to negative two thirds.vi" Type="VI" URL="../../raise to negative two thirds.vi"/>
+		<Item Name="DOM coag demand.vi" Type="VI" URL="../../DOM coag demand.vi"/>
+		<Item Name="data buffer cmd.ctl" Type="VI" URL="../../data buffer cmd.ctl"/>
+		<Item Name="HRT data cluster.ctl" Type="VI" URL="../../HRT data cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -274,7 +277,6 @@
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -345,9 +347,8 @@
 			<Item Name="Manual or Auto.ctl" Type="VI" URL="../../Manual or Auto.ctl"/>
 			<Item Name="ini.ctl" Type="VI" URL="../../ini.ctl"/>
 			<Item Name="backwash.ctl" Type="VI" URL="../../backwash.ctl"/>
-			<Item Name="coag model linear regression.vi" Type="VI" URL="../../coag model linear regression.vi"/>
-			<Item Name="save HRT data.vi" Type="VI" URL="../../save HRT data.vi"/>
 			<Item Name="coag pump volts.vi" Type="VI" URL="../../coag pump volts.vi"/>
+			<Item Name="save HRT data.vi" Type="VI" URL="../../save HRT data.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Pilot Plant" Type="EXE">
@@ -365,7 +366,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -375,7 +376,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5DE775CD-868B-4290-890E-691361B57615}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9EC9C7B1-0D31-4131-87E4-10D90F7F2FDF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
@@ -405,7 +406,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
