@@ -360,6 +360,7 @@
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{D7EA04A2-A74A-451F-9153-14DCF8600C4B}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">add save for coag autocorrector model data</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Pilot Plant</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -368,7 +369,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">8</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -378,7 +379,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{01A8CC42-0F87-49F6-AB84-2B2BA5552EE6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B10E05DA-5276-48C8-BAA8-6D94D3045FBF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
@@ -408,7 +409,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.11</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
