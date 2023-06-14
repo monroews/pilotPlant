@@ -47,6 +47,8 @@
 		<Item Name="HRT data cluster.ctl" Type="VI" URL="../../HRT data cluster.ctl"/>
 		<Item Name="test ini.vi" Type="VI" URL="../../test ini.vi"/>
 		<Item Name="save auto coag data.vi" Type="VI" URL="../../save auto coag data.vi"/>
+		<Item Name="coag dose.vi" Type="VI" URL="../../coag dose.vi"/>
+		<Item Name="test delta HRT.vi" Type="VI" URL="../../test delta HRT.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
