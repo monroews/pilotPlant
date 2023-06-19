@@ -371,7 +371,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -411,7 +411,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.14</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.15</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
