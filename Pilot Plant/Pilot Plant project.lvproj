@@ -371,7 +371,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -381,7 +381,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C3240A1D-7F94-4BDD-A2C9-0D1DA8AE2736}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7C39D5B4-E0A1-48C4-824F-6E6AEA418700}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
@@ -411,7 +411,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.15</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.17</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
