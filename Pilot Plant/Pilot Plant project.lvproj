@@ -49,6 +49,7 @@
 		<Item Name="save auto coag data.vi" Type="VI" URL="../../save auto coag data.vi"/>
 		<Item Name="coag dose.vi" Type="VI" URL="../../coag dose.vi"/>
 		<Item Name="test delta HRT.vi" Type="VI" URL="../../test delta HRT.vi"/>
+		<Item Name="artificial data.vi" Type="VI" URL="../../artificial data.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -337,6 +338,11 @@
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="subCollector.vi" Type="VI" URL="/&lt;vilib&gt;/express/express signal manip/SampleCompressionBlock.llb/subCollector.vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/sub_Random U32.vi"/>
+				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
+				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
+				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
+				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
 			</Item>
 			<Item Name="backwash.vi" Type="VI" URL="../../backwash.vi"/>
 			<Item Name="coag pump.vi" Type="VI" URL="../../coag pump.vi"/>
@@ -371,7 +377,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">16</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -381,7 +387,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7C39D5B4-E0A1-48C4-824F-6E6AEA418700}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B4EA2A7D-AA96-49B7-A4AE-72359D87730C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
@@ -411,7 +417,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.17</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.18</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
