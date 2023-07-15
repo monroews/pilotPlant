@@ -359,6 +359,10 @@
 			<Item Name="backwash.ctl" Type="VI" URL="../../backwash.ctl"/>
 			<Item Name="coag pump volts.vi" Type="VI" URL="../../coag pump volts.vi"/>
 			<Item Name="save HRT data.vi" Type="VI" URL="../../save HRT data.vi"/>
+			<Item Name="Get Application Build Version.vi" Type="VI" URL="../../../LabVIEW/ProCoDA/Get Application Build Version.vi"/>
+			<Item Name="System" Type="VI" URL="System">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Pilot Plant" Type="EXE">
@@ -377,7 +381,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E5A7369C-3C93-4AA9-8100-06F9CC802F23}</Property>
-				<Property Name="Bld_version.build" Type="Int">17</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">PilotPlant.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/PilotPlant.exe</Property>
@@ -387,7 +391,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Pilot Plant/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/PilotPlant.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B4EA2A7D-AA96-49B7-A4AE-72359D87730C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6A29E855-1EC5-46E3-A2BE-8600D901752B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PilotPlant.vi</Property>
@@ -417,10 +421,12 @@
 				<Property Name="INST_defaultDir" Type="Str">{C7B634B7-93C0-4804-99F7-62EBB4806AB4}</Property>
 				<Property Name="INST_installerName" Type="Str">PilotPlantInstall.exe</Property>
 				<Property Name="INST_productName" Type="Str">Pilot Plant project</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.18</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.20</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
-				<Property Name="MSI_arpCompany" Type="Str">Cornell University</Property>
+				<Property Name="MSI_arpCompany" Type="Str">AguaClara Reach</Property>
+				<Property Name="MSI_arpContact" Type="Str">Monroe Weber-Shirk</Property>
+				<Property Name="MSI_arpURL" Type="Str">https://www.aguaclarareach.org/</Property>
 				<Property Name="MSI_distID" Type="Str">{74EF4270-35F4-46AD-AA76-061C14A1498B}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
